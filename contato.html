@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Caio Ribeiro">
+    <meta name="description" content="Blog Anna Bella pratica programacao">
+    <meta name="keywords" content="HTML, CSS">
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Contato</title>
+    <link rel="icon" href="./imagens/favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+    <div class="geral">
+      <header>
+        <img src="./imagens/capa.png" alt="capa-cabeçalho" />
+      </header>
+      <nav>
+        <ul>
+          <a href="index.html">HOME</a>
+          <a href="biografia.html">BIOGRAFIA</a>
+          <a href="publicidade.html">CAMPANHAS PUBLICITARIAS</a>
+          <a href="contato.html">CONTATO</a>
+        </ul>
+      </nav>
+      <section>
+        <h1>Entre em contato conosco!</h1>
+        <form action="POST" method="post">
+          <fieldset>
+            <legend>Contato</legend>
+            <div>
+              <div>
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome" />
+              </div>
+              <div>
+                <label for="email">Email:</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="seu_email@email.com"
+                />
+              </div>
+              <div id="genero">
+                <legend>Gênero:</legend>
+                <div>
+                  <input type="radio" name="radio" id="mulher-radio" />
+                  <label for="mulher">Mulher</label>
+                </div>
+                <div>
+                  <input type="radio" name="radio" id="homem-radio" />
+                  <label for="homem">Homem</label>
+                </div>
+                <div>
+                  <input type="radio" name="radio" id="nb-radio" />
+                  <label for="nao-binario">Não Binário</label>
+                </div>
+              </div>
+            </div>
+            <div>
+              <textarea
+                name="texto-contato"
+                id="caixa-contato"
+                cols="30"
+                rows="10"
+                placeholder="Escreva aqui sua mensagem..."
+              ></textarea>
+            </div>
+          </fieldset>
+          <input type="button" id="form-button" value="Enviar" />
+        </form>
+      </section>
+      <footer>
+        <h4>Todos os direitos reservados</h4>
+      </footer>
+    </div>
+  </body>
+  <style>
+    form {
+      display: flex;
+      flex-direction: column;
+      padding: 15px;
+      height: 445px;
+    }
+
+    legend {
+      font-size: 25px;
+    }
+
+    fieldset {
+      display: flex;
+      gap: 80px;
+      padding: 10px;
+    }
+
+    fieldset > div {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    #nome,
+    #email {
+      height: 30px;
+      padding: 5px;
+      font-size: 20px;
+    }
+
+    #genero {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    textarea {
+      padding: 15px;
+      resize: none;
+      font-size: 20px;
+    }
+
+    #form-button {
+      align-self: center;
+      margin-top: 15px;
+      height: 50px;
+      width: 90px;
+      background-color: #c5c5b2;
+      color: #4b566a;
+      font-weight: bolder;
+    }
+
+    #form-button:hover {
+      height: 52px;
+      width: 92px;
+      background-color: #828271;
+      color: #fff;
+    }
+
+    input {
+      border-radius: 10px;
+      border: 1px solid #4b566a;
+    }
+
+  </style>
+</html>
